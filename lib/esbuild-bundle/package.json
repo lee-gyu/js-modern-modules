@@ -1,0 +1,13 @@
+{
+    "name": "@repo/esbuild-bundle",
+    "type": "module",
+    "private": true,
+    "exports": {},
+    "files": [
+        "lib/"
+    ],
+    "scripts": {
+        "clean": "rimraf lib/",
+        "build": "pnpm clean && node ./esbuild.js"
+    }
+}

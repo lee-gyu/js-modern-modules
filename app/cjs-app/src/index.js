@@ -3,6 +3,8 @@ const { v4 } = require("uuid");
 const chalk = require("chalk");
 
 console.log("chalk resolved: " + require.resolve("chalk"));
+console.log("chalk resolved: " + require.resolve("chalk"));
+console.log("chalk resolved paths: ", require.resolve.paths("chalk"));
 console.log("uuid resolved: " + require.resolve("uuid"));
 console.log(v4());
 

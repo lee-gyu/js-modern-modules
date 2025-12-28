@@ -4,6 +4,7 @@
     "private": true,
     "scripts": {
         "start": "node src/index.js",
+        "start:trace": "node --trace-require-module=all src/index.js",
         "start:esm": "node src/esm.mjs"
     },
     "dependencies": {

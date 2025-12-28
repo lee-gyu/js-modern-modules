@@ -1,0 +1,17 @@
+{
+    "name": "@repo/rollup-bundle",
+    "type": "module",
+    "private": true,
+    "exports": {
+        ".": {
+            "import": "./lib/esm/index.js"
+        }
+    },
+    "files": [
+        "lib/"
+    ],
+    "scripts": {
+        "clean": "rimraf lib/",
+        "build": "pnpm clean && rollup -c rollup.config.js"
+    }
+}
