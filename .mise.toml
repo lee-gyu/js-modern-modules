@@ -1,0 +1,5 @@
+[tools]
+node = "22.21.1"
+
+[hooks]
+postinstall = 'npx corepack enable'

@@ -1,0 +1,19 @@
+{
+    "name": "@repo/cjs-module",
+    "private": true,
+    "type": "commonjs",
+    "main": "./lib/esm/index.js",
+    "module": "./lib/cjs/index.js",
+    "exports": {
+        ".": {
+            "require": "./lib/cjs/index.js"
+        }
+    },
+    "files": [
+        "lib/"
+    ],
+    "scripts": {
+        "clean": "rimraf lib/",
+        "build": "pnpm clean && tsc"
+    }
+}
