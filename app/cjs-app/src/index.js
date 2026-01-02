@@ -9,3 +9,5 @@ console.log("uuid resolved: " + require.resolve("uuid"));
 console.log(v4());
 
 console.log(`[INFO] ${chalk.default.green(v4())}`);
+
+console.log(require.cache);
